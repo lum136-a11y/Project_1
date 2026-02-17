@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+<style>
+      body {
+        font-family: "Google Sans Flex", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "slnt" 0,
+          "wdth" 100,
+          "GRAD" 0,
+          "ROND" 0;
+      }
+        .split {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            }
+
+            /* Control the left side */
+            .left {
+            left: 0;
+            background-color: #5ECAF9;
+            }
+
+            /* Control the right side */
+            .right {
+            right: 0;
+            background-color: #EAEAEA;
+            }
+
+            /* If you want the content centered horizontally and vertically */
+            .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
+            h1 {
+                font-size: 6em;
+                line-height: 1.2;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            h2 {
+              font-size: 2.5em;
+              text-align: left;
+              padding: 5px;
+              border-bottom: 2.4px solid black;
+            }
+            a:hover {
+  color: #5ECAF9;
+  text-decoration: none;
+}
+    </style>
+</head>
+<body>
+<div class="split left">
+  <div class="centered">
+    <h1>Jorges Luis Borges</h1>
+  </div>
+  <div class="parallelogram"></div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <a href="GFP.html"><h2>Garden of Forking Paths</h2></a>
+    <a href="TCR.html"><h2>The Circular Ruins</h2></a>
+    <a href="BOS.html"><h2>The Book of Sand</h2></a>
+  </div>
+</div>
+
+</body>
+</html>
