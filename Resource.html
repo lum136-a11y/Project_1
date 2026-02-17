@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300&display=swap" rel="stylesheet">
+<style>
+body {
+    background-color: #EAEAEA;
+    margin-top: 0;
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 3500;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "GRAD" 0,
+        "ROND" 0;
+}
+main {
+    width: auto;
+    height: auto;
+    margin: 0 160px 50px 5px;
+    padding: 10px;
+    /* background-color: rgb(225, 255, 0); */
+}
+article {
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0 0 85px 0;
+}
+article h3 {
+    /* background-color: rgba(49, 255, 183, 0.735); */
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    height: auto;
+    float: left;
+    margin: 0 1% 1% 1%;
+    padding: 0;
+    text-align: center;
+}
+.collapsible {
+  background-color: #5ECAF9;
+  color: rgb(0, 0, 0);
+  width: auto;
+  height: 50px;
+  cursor: pointer;
+  padding: 20px 18px 14px 18px;
+  text-align: center;
+  border: none;
+  font-size: 1.75em;
+  border-radius: 0 0 0 20px;
+  border: 3px solid #2BA6E3;
+}
+.active, .collapsible:hover {
+    background-color: #2BA6E3;
+}
+.content {
+  padding: 0 17px;
+  margin: 0;
+  text-align: left;
+  border-radius: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  width: auto;
+  margin-top: -20px;
+  padding-top: 20px;
+  display: none;
+  overflow: hidden;
+  border-radius: 0 0 0 20px;
+  background-color: #2BA6E3;
+  border-top: none;
+}
+.wrapper {
+    display: flex;
+}
+.fixed-viewport {
+    position: fixed;
+    top: 0;
+    right: 15px;
+    width: 100px;
+    height: 50vh;
+    margin-top: 50px;
+    padding: 20px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    background-color: lightgray;
+    border-radius: 10px 10px 0 0;
+    border: 3px solid #BABABA;
+}
+.fixed-viewport h3 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+nav {
+    background-color: lightgray;
+    border: 3px solid #BABABA;
+    border-radius: 0 0 10px 10px;
+    padding: 0;
+    position: fixed;
+    width: 140px;
+    height: auto;
+    right: 15px;
+    bottom: 25vh;
+    font-size: 14px;
+}
+nav h3 {
+    border-bottom: 2px solid #BABABA;
+    text-align: center;
+    margin: 0;
+    padding: 2px 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#padding {
+    padding: 12px 18px 21.5px 18px;
+}
+h1 {
+    /* background-color: yellow; */
+    text-align: center;
+    font-size: 5em;
+    font-weight: 700;
+    margin: 50px 100px 50px 0;
+}
+.nav_hover:hover {
+    background-color: #BABABA;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Vocabulary List</h1>
+</header>
+<div class="wrapper">
+<main>
+    <article>
+        <h3>
+        <div class="collapsible">Amphitheater</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Argentine</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Ashgrove</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Bamboo Canoe</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Berlin</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Belgrano</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Bikaner</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Buddhist</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Buenos Aires</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3 style="font-size: 1.1em;">
+        <div class="collapsible">Cipriano de Valera</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Delirium</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Diminution</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Encyclopedia</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+    </article>
+    <article>
+        <h3>
+        <div class="collapsible">Figs & Jugs</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Fenton</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Geometrico</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Gnostic</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Handkerchief</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3 style="font-size: 1.1em;">
+        <div class="collapsible">Hangman’s Noose</div>
+        <div class="content">
+            <p>The hangman’s knot, also called a hangman’s noose, is a type of knot most commonly associated with executions by hanging. It forms a sliding loop that tightens when pulled and was designed to either break the neck or stop blood flow to the brain. The knot has several coils that add friction, making it tighten firmly and resist loosening.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Hallucination</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Hemlock</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3 style="font-size: 1.3em;">
+        <div class="collapsible">Hume</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Insomnia</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+    </article>
+    <article>
+        <h3>
+        <div class="collapsible">Labyrinths</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Leopards</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Leprosy</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3 style="font-size: 1em;">
+        <div class="collapsible">Luminous Dynasty</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Metaphysical</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Newton</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Oarsmen</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Octavo</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Orkneys</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Oxford</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+    </article>
+    <article>
+        <h3>
+        <div class="collapsible">Pavilion</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Penitence</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Penumbra</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Persian</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Poplar Trees</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Presbyterian</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3 style="font-size: 1.1em;">
+        <div class="collapsible">Pulmonary Artery</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Scheherezade</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Schopenhauer</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Scandinavian</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Shillings</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Sinologist</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Staffordshire</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Stevenson</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Sophism</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+    </article>
+    <article>
+        <h3>
+        <div class="collapsible">Tacitus' Annals</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3 style="font-size: 1.3em;">
+        <div class="collapsible">Taoist</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Talisman</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3 style="font-size: 1em;">
+        <div class="collapsible" id="padding">Thirteen British Division</div>
+        <div class="content">
+            <p>The 13th (Western) Division was a British Army unit formed in 1914 from volunteers and sent to fight in major World War I campaigns, including Gallipoli, Egypt, and Mesopotamia. It took part in important battles such as Gallipoli in 1915 and later helped capture Baghdad in 1917 while fighting harsh conditions and heavy losses. After continuing operations until the end of the war, the division was disbanded in 1919, having suffered over 12,000 casualties and widespread illness.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Tientsin</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3 style="font-size: 1.2em;">
+        <div class="collapsible" >Torrential Rain</div>
+        <div class="content">
+            <p>Torrential rain is extremely heavy rainfall that happens suddenly when warm, moist air releases large amounts of water quickly.
+        It often forms during weather events like storms, hurricanes, or cold fronts, when the air contains a lot of moisture.
+        This type of rain can be dangerous because it can cause flooding, runoff, and mudslides that damage land, buildings, and threaten lives.
+</p>
+        </div>
+        </h3>
+        <h3 style="font-size: 1.3em;">
+        <div class="collapsible">Vulgate</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3>
+        <div class="collapsible">Wicliffe</div>
+        <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3 style="font-size: 1.1em;">
+        <div class="collapsible">World War History</div>
+        <div class="content">
+            <p>A world war is a major international conflict involving most of the world’s powerful nations, usually referring to World War I and World War II. These wars became possible because industrial and technological advances allowed countries to fight on a global scale with modern weapons. The term existed before 1914, but it became strongly associated with these two devastating conflicts and their worldwide impact.</p>
+        </div>
+        </h3>
+        <h3 style="font-size: 1.3em;">
+        <div class="collapsible">Yunnan</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+        <h3 style="font-size: 1.3em;">
+        <div class="collapsible">Zend</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </h3>
+    </article>
+</main>
+<aside>
+    <div class="fixed-viewport">
+    <h3>Amphitheater</h3>
+    <h3>Argentine</h3>
+    <h3>Ashgrove</h3> 
+    <h3>Bamboo Canoe</h3>
+    <h3>Berlin</h3>
+    <h3>Belgrano</h3>
+    <h3>Bikaner</h3>
+    <h3>Buddhist</h3>
+    <h3>Buenos Aires</h3>
+    <h3>Cipriano de Valera</h3>
+    <h3>Delirium</h3>
+    <h3>Diminution</h3>
+    <h3>Encyclopedia</h3>
+    <h3>Figs & Jugs</h3>
+    <h3>Fenton</h3>
+    <h3>Geometrico</h3>
+    <h3>Gnostic</h3>
+    <h3>Handkerchief</h3>
+    <h3>Hangman’s Noose</h3>
+    <h3>Hallucination</h3>
+    <h3>Hemlock</h3>
+    <h3>Hume</h3>
+    <h3>Insomnia</h3>  
+    <h3>Labyrinths</h3>
+    <h3>Leopards</h3>
+    <h3>Leprosy</h3>
+    <h3>Luminous Dynasty</h3>
+    <h3>Metaphysical</h3>
+    <h3>Newton</h3>
+    <h3>Oarsmen</h3>
+    <h3>Octavo</h3>
+    <h3>Orkneys</h3>
+    <h3>Oxford</h3>
+    <h3>Pavilion</h3>
+    <h3>Penitence</h3>
+    <h3>Penumbra</h3>
+    <h3>Persian</h3>
+    <h3>Poplar Trees</h3>
+    <h3>Presbyterian</h3>
+    <h3>Pulmonary Artery</h3>
+    <h3>Scheherezade</h3>
+    <h3>Schopenhauer</h3>
+    <h3>Scandinavian</h3>
+    <h3>Shillings</h3>
+    <h3>Sinologist</h3>
+    <h3>Staffordshire</h3>
+    <h3>Stevenson</h3>
+    <h3>Sophism</h3>
+    <h3>Tacitus' Annals</h3>
+    <h3>Taoist</h3>
+    <h3>Talisman</h3>
+    <h3>Thirteen British Division</h3>
+    <h3>Tientsin</h3>
+    <h3>Torrential Rain</h3>
+    <h3>Vulgate</h3>
+    <h3>Wicliffe</h3>
+    <h3>World War History</h3>
+    <h3>Yunnan</h3>
+    <h3>Zend</h3> 
+    </div>
+<nav>
+    <a href="Home.html"><h3 class="nav_hover">Homepage</h3></a>
+    <a href="GFP.html"><h3 class="nav_hover">Garden of the <br>Forking Paths</h3></a>
+    <a href="TCR.html"><h3 class="nav_hover">The Circular Ruins</h3></a>
+    <a href="BOS.html"><h3 class="nav_hover" style="border-bottom: none;">The Book of Sand</h3></a>
+</nav>
+</aside>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
