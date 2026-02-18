@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vocabulary</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300&display=swap" rel="stylesheet">
-<style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300&display=swap" rel="stylesheet">
+    <style>
 body {
     background-color: #EAEAEA;
     margin-top: 0;
@@ -69,7 +69,7 @@ article h3 {
   margin: 0;
   text-align: left;
   border-radius: 0;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.6;
   width: auto;
   margin-top: -20px;
@@ -125,7 +125,9 @@ a {
 
 #padding {
     padding: 12px 18px 21.5px 18px;
+    font-size: 1.5em;
 }
+
 h1 {
     /* background-color: yellow; */
     text-align: center;
@@ -135,6 +137,97 @@ h1 {
 }
 .nav_hover:hover {
     background-color: #BABABA;
+}
+@media screen and (max-width: 600px) {
+article h3 {
+    /* background-color: rgba(49, 255, 183, 0.735); */
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    float: left;
+    margin: 0 1% 1% 1%;
+    padding: 0;
+    text-align: center;
+}
+main {
+    width: auto;
+    height: auto;
+    margin: 20px 50px 50px 5px;
+    padding: 10px;
+    /* background-color: rgb(225, 255, 0); */
+}
+.fixed-viewport {
+    position: fixed;
+    top: 0;
+    right: 15px;
+    width: 50px;
+    height: 50vh;
+    margin-top: 50px;
+    padding: 20px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    background-color: lightgray;
+    border-radius: 10px 10px 0 0;
+    border: 3px solid #BABABA;
+}
+.fixed-viewport h3 {
+    font-size: 10px;
+    margin: 0 0 10px 0;
+}
+nav {
+    background-color: lightgray;
+    border: 3px solid #BABABA;
+    border-radius: 0 0 10px 10px;
+    padding: 0;
+    position: fixed;
+    width: 90px;
+    height: auto;
+    right: 15px;
+    bottom: 25vh;
+    font-size: 10px;
+}
+.content {
+  padding: 0 17px;
+  margin: 0;
+  text-align: left;
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  width: auto;
+  margin-top: -20px;
+  padding-top: 20px;
+  display: none;
+  overflow: hidden;
+  border-radius: 0 0 0 20px;
+  background-color: #2BA6E3;
+  border-top: none;
+}
+.collapsible {
+  background-color: #5ECAF9;
+  color: rgb(0, 0, 0);
+  width: auto;
+  height: 40px;
+  cursor: pointer;
+  padding: 20px 18px 10px 18px;
+  text-align: center;
+  border: none;
+  font-size: 1em;
+  border-radius: 0 0 0 20px;
+  border: 3px solid #2BA6E3;
+}
+.active, .collapsible:hover {
+    background-color: #2BA6E3;
+}
+#padding {
+    padding: 12px 18px 21.5px 18px;
+    font-size: smaller;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 50px 120px 50px 0;
+}
 }
 </style>
 </head>
@@ -148,79 +241,82 @@ h1 {
         <h3>
         <div class="collapsible">Amphitheater</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>An amphitheater is an open, circular or oval building with tiered seating designed for performances, sports, or public events. Its structure allows large audiences to have a clear view of the central stage or arena.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Argentine</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Argentine refers to something or someone from Argentina, a country in South America. It can describe people, culture, food, or other national characteristics.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Ashgrove</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>“The Ash Grove” is a traditional Welsh folk song that has been adapted into many versions and remains popular in English‑speaking countries.
+                or its sweet, lyrical melody and themes of love and longing, and has been used in various musical arrangements and recordings over the years.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Bamboo Canoe</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>A lightweight, eco-friendly watercraft constructed primarily from bamboo poles, strips, or composites, often featuring a skin-on-frame design</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Berlin</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Berlin is the capital and largest city of Germany, located in the northeastern part of the country on the River Spree, and it also functions as one of Germany’s 16 federal states with a population of about 3.6–3.9 million people.
+            n the 13th century, it has been the capital of Prussia, the German Empire, the Weimar Republic, and—after reunification in 1990—the unified Federal Republic of Germany, and today is a major global center of culture, politics, media, science, and tourism.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Belgrano</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Belgrano is a residential neighborhood in the northern part of Buenos Aires, Argentina, known for its historic architecture, parks, and upscale shopping streets. It is named after Manuel Belgrano, an Argentine economist, politician, and military leader who created the national flag.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Bikaner</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Bikaner is a city in the northwestern Indian state of Rajasthan, known for its desert landscape, historic forts, palaces, and traditional sweets. It was founded in the 15th century and served as a princely state during British rule.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Buddhist</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Buddhism is a religion and philosophy that developed from the teachings of the Buddha, who lived in northern India between the 6th and 4th centuries BCE.
+            es ideas about suffering, spiritual liberation, and living wisely, and it spread from India to many parts of Asia and later to the rest of the world.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Buenos Aires</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Buenos Aires is the capital and largest city of Argentina, located on the southeastern coast along the Río de la Plata. It is a major cultural, political, and economic center, famous for its architecture, tango music, and vibrant urban life.</p>
         </div>
         </h3>
         <h3 style="font-size: 1.1em;">
-        <div class="collapsible">Cipriano de Valera</div>
+        <div class="collapsible media_size">Cipriano de Valera</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Cipriano de Valera (1522–1602) was a Spanish Protestant theologian and translator who revised the Reina-Valera Bible, an influential Spanish translation of the Bible. His work helped spread Protestant ideas in the Spanish-speaking world during the Reformation.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Delirium</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Delirium is an acute, confused state of mind characterized by disorientation, impaired attention, and sometimes hallucinations. It often arises from illness, infection, or drug effects and usually develops rapidly.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Diminution</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Diminution is the act or process of decreasing or reducing something in size, quantity, or importance. It can refer to physical objects, abstract qualities, or social or economic influence.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Encyclopedia</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Encyclopedia is a work that contains information on all branches of knowledge or treats comprehensively a particular branch of knowledge usually in articles arranged alphabetically often by subject</p>
         </div>
         </h3>
     </article>
@@ -228,35 +324,39 @@ h1 {
         <h3>
         <div class="collapsible">Figs & Jugs</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>A fig is a soft, sweet fruit that grows on trees of the genus Ficus. It is often eaten fresh or dried and is used in cooking, baking, and preserves. <br>
+            A jug is a container, usually with a handle and a spout, designed for holding and pouring liquids. It can be made of materials such as ceramic, glass, or plastic and is commonly used for water, milk, or juice.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Fenton</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>James Fenton is an English poet and journalist, born in 1949 in Lincoln, England, and known for his skill in many styles of poetry and his liberal political themes.
+            He worked as a war correspondent and literary critic, and his experiences in places like Vietnam and Cambodia strongly influenced his poetry.
+            Fenton later became Oxford Professor of Poetry and won major awards, including the Queen’s Gold Medal for Poetry.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Geometrico</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Geometrico (or geometric) refers to shapes, patterns, or designs that are based on the principles of geometry, such as lines, circles, squares, and triangles. It is commonly used in art, architecture, and design to create precise, organized, or symmetrical forms.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Gnostic</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Gnostic refers to knowledge of spiritual mysteries or esoteric truths, often associated with ancient religious movements. Gnosticism emphasizes personal insight or revelation as the path to understanding divine realities.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Handkerchief</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>A handkerchief is a small, usually square piece of cloth carried for personal use, such as wiping the nose, face, or hands, and it may also be used as a decorative pocket accessory.
+            They are typically made from materials like cotton, silk, or linen, and have been used since ancient times for hygiene, fashion, and practical purposes.</p>
         </div>
         </h3>
         <h3 style="font-size: 1.1em;">
-        <div class="collapsible">Hangman’s Noose</div>
+        <div class="collapsible media_size">Hangman’s Noose</div>
         <div class="content">
             <p>The hangman’s knot, also called a hangman’s noose, is a type of knot most commonly associated with executions by hanging. It forms a sliding loop that tightens when pulled and was designed to either break the neck or stop blood flow to the brain. The knot has several coils that add friction, making it tighten firmly and resist loosening.</p>
         </div>
@@ -264,25 +364,25 @@ h1 {
         <h3>
         <div class="collapsible">Hallucination</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>A hallucination is a sensory experience in which a person sees, hears, smells, tastes, or feels something that isn’t actually present. Hallucinations can occur in conditions such as mental illness, drug use, or extreme sleep deprivation.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Hemlock</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Hemlock is a highly poisonous plant of the parsley family that can be fatal if ingested. The term also refers to certain coniferous trees of the genus Tsuga, which are not poisonous but share the same name.</p>
         </div>
         </h3>
         <h3 style="font-size: 1.3em;">
         <div class="collapsible">Hume</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>David Hume (1711–1776) was a Scottish philosopher, historian, and essayist known for his empiricism, skepticism, and philosophical writings on human nature. He profoundly influenced modern philosophy, especially theories of knowledge, ethics, and causality.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Insomnia</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Insomnia is a sleep disorder in which a person has difficulty falling asleep, staying asleep, or getting restorative sleep. It can be short-term or chronic and may cause fatigue, irritability, and impaired concentration.</p>
         </div>
         </h3>
     </article>
@@ -290,61 +390,67 @@ h1 {
         <h3>
         <div class="collapsible">Labyrinths</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Labyrinths are plural of labyrinth, meaning places with complicated passages where it is difficult to find your way, or situations that are very complex and confusing.
+            They can also refer to intricate structures in the body, especially the inner ear.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Leopards</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>A leopard is a large wild cat native to Africa and Asia, known for its yellowish coat with distinctive black spots. It is a solitary, stealthy predator, highly skilled at climbing and hunting.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Leprosy</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Leprosy, also called Hansen’s disease, is a chronic infectious disease caused by the bacterium Mycobacterium leprae that mainly affects the skin, peripheral nerves, and mucous membranes.
+            d to skin lesions, nerve damage, and deformities if untreated, but today it is curable with multidrug therapy and early treatment prevents disability.</p>
         </div>
         </h3>
         <h3 style="font-size: 1em;">
-        <div class="collapsible">Luminous Dynasty</div>
+        <div class="collapsible media_size">Luminous Dynasty</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Luminous Dynasty refers to The Ming dynasty in Chinese History. It was a Chinese imperial dynasty that ruled from 1368 to 1644, founded after the fall of the Mongol-led Yuan dynasty and marking the last period of rule by ethnic Han Chinese emperors.
+            as a powerful and stable era known for expanding China’s influence, building Beijing’s Forbidden City, promoting trade and exploration, and developing strong government and cultural achievements.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Metaphysical</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Metaphysics is a branch of philosophy that studies the fundamental nature of reality, including questions about existence, being, and the structure of the world.
+                xplores abstract issues such as the nature of objects, causation, time, and the relationship between mind and body, aiming to understand what is ultimately real.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Newton</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Sir Isaac Newton (1643–1727) was an English mathematician, physicist, astronomer, and key figure of the Scientific Revolution, whose work laid the foundations of classical mechanics and modern science.
+            losophiæ Naturalis Principia Mathematica (1687) formulated the laws of motion and universal gravitation, and he also made major contributions to optics and the development of calculus.</p>
         </div>
         </h3>
         <h3>
-        <div class="collapsible">Oarsmen</div>
+        <div class="collapsible">Oarsman</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>An oarsman is a person who rows a boat using oars. They may row for transportation, recreation, or competitive sports, requiring strength, coordination, and endurance.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Octavo</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Octavo is a book or manuscript format in which each sheet of paper is folded three times to produce eight leaves (16 pages). This format was popular in early printing because it created a compact, portable, and economical book size.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Orkneys</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Orkney is a group of islands off the northeastern coast of Scotland, known for its rich archaeological sites, scenic landscapes, and maritime culture. The islands have a history of Norse influence and are home to traditional farming, fishing, and heritage tourism.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Oxford</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>The University of Oxford is the oldest university in the English-speaking world, with teaching existing as early as 1096 and developing rapidly after 1167 when English students were banned from studying in Paris.
+             time it established colleges, became an important center of learning and debate, admitted women as full members in 1920, and today remains a major international center for education and research.</p>
         </div>
         </h3>
     </article>
@@ -352,49 +458,53 @@ h1 {
         <h3>
         <div class="collapsible">Pavilion</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>A pavilion in architecture is a light, often open or semi-permanent structure used in gardens or pleasure grounds, originally built for special events like banquets and celebrations.
+            The term can also refer to temporary buildings for exhibitions or sports, or smaller structures connected to a larger building, often used for leisure or special purposes.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Penitence</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Penitence means the feeling or state of being sorry for doing something wrong and wanting to make up for it.
+            It is closely related to repentance and often involves remorse and a desire to change one’s behavior.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Penumbra</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>A penumbra is the partially shaded outer region of a shadow, especially during an eclipse. It can also refer to a marginal or intermediate area where effects or influence are only partially felt.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Persian</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Persian refers to the predominant ethnic group of Iran, united mainly by their language, Persian (Farsi), which belongs to the Indo-European language family.
+            e term can also describe the people, language, or culture connected to the historical region of Persia, now modern Iran.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Poplar Trees</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Poplar trees are fast-growing trees of the genus Populus, with about 35 species in the willow family, native to the Northern Hemisphere.
+            They have fluttering leaves and soft wood, which is often used to make paper, crates, and similar products.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Presbyterian</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Presbyterian refers to a branch of Protestant Christianity governed by a system of elders (presbyters) rather than bishops. It emphasizes the authority of scripture, representative church governance, and a tradition of theological education.</p>
         </div>
         </h3>
         <h3 style="font-size: 1.1em;">
-        <div class="collapsible">Pulmonary Artery</div>
+        <div class="collapsible media_size">Pulmonary Artery</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>The pulmonary artery is the blood vessel that carries deoxygenated blood from the right ventricle of the heart to the lungs. In the lungs, the blood picks up oxygen and releases carbon dioxide before returning to the heart.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Scheherezade</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Scheherazade is the legendary storyteller and main character of One Thousand and One Nights, a famous collection of Middle Eastern folktales. She marries a king who plans to execute her, but saves her life by telling him suspenseful stories over 1,001 nights, eventually changing his attitude and ending his violence.</p>
         </div>
         </h3>
         <h3>
@@ -406,37 +516,42 @@ h1 {
         <h3>
         <div class="collapsible">Scandinavian</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Scandinavian refers to people, culture, or languages originating from the region of Scandinavia, which includes Norway, Sweden, and Denmark. It can also describe the distinctive artistic, architectural, and social traditions associated with these countries.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Shillings</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>A shilling was a former unit of money used in Britain, equal to one-twentieth of a pound or 12 pence, and it was widely used until the UK switched to decimal currency in 1971.
+            The term dates back to Anglo-Saxon times, and although it is no longer used in Britain, the shilling is still the main currency unit in countries such as Kenya, Tanzania, Somalia, and Uganda.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Sinologist</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Sinology is the academic study of China and Chinese topics, including the language, history, culture, and society of the Chinese‑speaking world.
+            tionally associated with Western scholars of China, it combines disciplines like linguistics, literature, history, and anthropology to understand Chinese civilization.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Staffordshire</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Staffordshire is a ceremonial county in the West Midlands of England, with its county town at Stafford and its largest settlement at Stoke‑on‑Trent.
+                It is historically known for its pottery, coal, and iron industries, which were central to its economic growth.
+</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Stevenson</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Robert Louis Stevenson (1850–1894) was a Scottish novelist, poet, and travel writer, famous for works such as Treasure Island and Strange Case of Dr Jekyll and Mr Hyde. His adventurous storytelling and vivid characters have made his books classics of English literature.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Sophism</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>A sophist was a professional teacher in ancient Greece who traveled and taught subjects like philosophy, rhetoric, and public speaking, often for a fee.
+            Today, the word can also mean someone who uses clever but misleading arguments to persuade others rather than to find the truth.</p>
         </div>
         </h3>
     </article>
@@ -444,23 +559,25 @@ h1 {
         <h3>
         <div class="collapsible">Tacitus' Annals</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>The Annals is a historical work by the Roman historian Tacitus that describes the Roman Empire from the death of Augustus in AD 14 to the death of Nero in AD 68.
+            It was originally written in 16 books (some now lost) and provides an important account of emperors such as Tiberius, Claudius, and Nero, while also examining the decline of political freedom in Rome.</p>
         </div>
         </h3>
         <h3 style="font-size: 1.3em;">
         <div class="collapsible">Taoist</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Taoism is a major Chinese philosophy and religion that has influenced Chinese life for more than 2,000 years and teaches people to live in harmony with the Tao, or the natural order of the universe.
+                aditionally associated with the philosopher Laozi and emphasizes following nature, balance, and simplicity rather than forcing actions against the natural flow.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Talisman</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>A talisman is an object, often inscribed or adorned, that is believed to have magical powers or bring good luck. People carry or display talismans to protect themselves from harm or attract positive outcomes.</p>
         </div>
         </h3>
         <h3 style="font-size: 1em;">
-        <div class="collapsible" id="padding">Thirteen British Division</div>
+        <div class="collapsible" id="padding">Thirteen <br>British Division</div>
         <div class="content">
             <p>The 13th (Western) Division was a British Army unit formed in 1914 from volunteers and sent to fight in major World War I campaigns, including Gallipoli, Egypt, and Mesopotamia. It took part in important battles such as Gallipoli in 1915 and later helped capture Baghdad in 1917 while fighting harsh conditions and heavy losses. After continuing operations until the end of the war, the division was disbanded in 1919, having suffered over 12,000 casualties and widespread illness.</p>
         </div>
@@ -468,7 +585,8 @@ h1 {
         <h3>
         <div class="collapsible">Tientsin</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Tianjin is a major city and province-level municipality in northern China, located near the Bohai Sea and serving as the leading port and an important manufacturing center of North China.
+                n an important transportation and trading hub since the Yuan dynasty and developed into a key commercial gateway to Beijing because of its strategic location and port.</p>
         </div>
         </h3>
         <h3 style="font-size: 1.2em;">
@@ -480,16 +598,16 @@ h1 {
 </p>
         </div>
         </h3>
-        <h3 style="font-size: 1.3em;">
+        <h3 style="font-size: 1.2em;">
         <div class="collapsible">Vulgate</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>The Vulgate is a Latin version of the Bible, largely translated by St. Jerome in the late 4th century, which became the standard Bible of the Roman Catholic Church. It was widely used for religious study, liturgy, and scholarship in the Middle Ages and beyond.</p>
         </div>
         </h3>
         <h3>
         <div class="collapsible">Wicliffe</div>
         <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>John Wycliffe (c. 1320s–1384) was an English theologian and early reformer who translated the Bible into English and criticized the Catholic Church’s practices. He is considered a precursor to the Protestant Reformation.</p>
         </div>
         </h3>
         <h3 style="font-size: 1.1em;">
@@ -501,13 +619,14 @@ h1 {
         <h3 style="font-size: 1.3em;">
         <div class="collapsible">Yunnan</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Yunnan is a province in southern China. It can also refer to anything related to the province or its people, and a person from there is called Yunnanese.</p>
         </div>
         </h3>
         <h3 style="font-size: 1.3em;">
         <div class="collapsible">Zend</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Zend is a term related to Zoroastrianism (an ancient Persian religion) that refers to the commentary, interpretation, and explanation of the Avesta, the sacred Zoroastrian scriptures.
+            It is not a separate language, but rather an interpretive tradition (often written in a Middle Persian dialect) used to clarify and explain the meaning of the original Avestan texts.</p>
         </div>
         </h3>
     </article>
