@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textarea</title>
+    <style>
+        .custom-textarea {
+            position: absolute;
+            top: 500px;
+            right: 0;
+            width: 100%;
+            max-width: 300px;
+            height: 60px;
+            padding: 10px;
+
+            background-color: red;
+            border: none;
+            outline: none;
+            }
+        .expandable_yellowbox {
+            position: relative;
+            top: 200px;
+            left: 80px;
+            width: auto;
+            height: auto;
+        }
+        .custom-textarea2 {
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            padding: 10px;
+
+            background-color: yellow;
+            border: none;
+            outline: none;
+        }
+        .small-redbox {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            bottom: 4px;
+            left: 0;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <textarea rows="4" cols="50" class="custom-textarea"></textarea>
+    <div class="expandable_yellowbox">
+        <textarea rows="4" cols="50" class="custom-textarea2"></textarea>
+        <div class="small-redbox"></div>
+    </div>
+</body>
+</html>

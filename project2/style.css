@@ -1,0 +1,263 @@
+        body {
+            height: 100vh;
+            overflow: auto;
+            background-color: #121736;
+            font-family: Jost, sans-serif;
+            color: rgb(0, 0, 0);
+        }
+        .radio input {
+        display: none;
+        }
+        .radio .custom {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        left: 800px;
+        }
+        .radio input:checked + .custom::after {
+        content: "";
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        }
+        .radio input:checked + #red::after {
+        background: #CA3A23;
+        }
+        .radio input:checked + #blue::after {
+        background: #0957F0;
+        }
+        .radio input:checked + #yellow::after {
+        background: #FECE2A;
+        }
+        .flexbox {
+            display: flex;
+            width: 380px;
+            height: 180px;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+
+        .slider {
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #a3c6e1;
+        width: 500px;
+        height: 10px;
+        outline: none;
+        transform: rotate(180deg);
+        }
+        /* Thumb */
+        .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 10px;
+        height: 10px;
+        background: #121736;
+        cursor: pointer;
+        }
+        .slider-vertical {
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+        #slider1 {
+            position: absolute;
+            top: 200px;
+            right: 0;
+        }
+        #slider2 {
+            position: absolute;
+            top: 600px;
+            right: 0;
+        }
+        #slider3 {
+            position: absolute;
+            top: 400px;
+            right: 150px;
+        }
+        #slider4 {
+            position: absolute;
+            top: 460px;
+            left: 550px;
+        }
+        #slider5 {
+            position: absolute;
+            top: 300px;
+            left: 200px;
+        }
+        #slider6 {
+            position: absolute;
+            top: 100px;
+            left: 0;
+        }
+        #slider7 {
+            position: absolute;
+            top: 765px;
+            left: 420px;
+            width: 450px;
+        }
+        #slider9 {
+            position: absolute;
+            top: 800px;
+            left: 25px;
+            width: 600px;
+            background-color: transparent;
+        }
+
+        #slider9::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 400px;
+        height: 400px;
+        background: #0957F0;
+        border-radius: 50%;
+        cursor: pointer;
+        }
+
+        .front-yellowbox {
+            position: absolute;
+            top: 250px;
+            right: 407px;
+            width: 200px;
+            height: 60px;
+            background: #FECE2A;
+        }
+        .custom-select {
+            position: absolute;
+            top: 235px;
+            right: 197px;
+            width: 200px;
+            height: 220px;
+            padding: 10px;
+            margin-right: 10px;
+            border: none;
+            background: transparent;
+            outline: none;
+            z-index: 10;
+        }
+        .custom-select option{
+            height: 60px;
+            margin: 5px 0;
+        }
+        .custom-select::-webkit-scrollbar {
+        display: none;
+        }
+        .custom-select option:checked {
+            background: #FECE2A;
+        }
+        #cars {
+            position: absolute;
+            top: 650px;
+            right: 20px;
+            transform: rotate(-90deg);
+            padding: 0px;
+        }
+        #cars option {
+            height: 8px;
+            width: 150px;
+            border-radius: 2px 2px 0 0;
+            background: #0957F0;
+        }
+        #cars option:checked {
+            background: #CA3A23;
+        }
+
+        .custom-textarea {
+            position: absolute;
+            top: 500px;
+            right: 0;
+            width: 100%;
+            max-width: 300px;
+            height: 60px;
+            padding: 10px;
+            background-color: #CA3A23;
+            border: none;
+            outline: none;
+            }
+        .expandable_yellowbox {
+            position: relative;
+            left: 80px;
+            width: 250px;
+            height: auto;
+        }
+        .custom-textarea2 {
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            padding: 10px;
+
+            background-color: #FECE2A;
+            border: none;
+            outline: none;
+        }
+        .small-redbox {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            bottom: 4px;
+            left: 0;
+            background-color: #CA3A23;
+        }
+        .flexbox2 {
+            position: absolute;
+            left: 790px;
+            top: 780px;
+            display: flex;
+            gap: 20px;
+        }
+        .checkbox {
+        display: none;
+        }
+        .custom-check {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        /* border: 2px solid black; */
+        position: relative;
+        cursor: pointer;
+        }
+        .custom-check::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #CA3A23;
+        opacity: 0;
+        }
+        .checkbox:checked + .custom-check::after {
+        opacity: 1;
+        }
+.bluesquare {
+    position: absolute;
+    top: 750px;
+    left: 720px;
+    width: 100px;
+    height: 100px;
+    background: #0957F0;
+}
+.text-layer {
+    position: fixed;
+    top: 9%;
+    left: 5%;
+    width: 1360px;
+    height: 700px;
+    pointer-events: none; /* ⭐ 不擋操作 */
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.266);
+}
+.textbox {
+    margin: 35px 50px 50px 50px;
+}
+.center {
+    text-align: center;
+}
+footer {
+    margin-top: 35px;
+}
+li {
+    line-height: 1.6;
+}
+

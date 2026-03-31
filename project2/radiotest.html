@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadioTest</title>
+    <style>
+        .radio input {
+        display: none;
+        }
+        .radio .custom {
+        width: 80px;
+        height: 80px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        left: 800px;
+        }
+        .radio input:checked + .custom::after {
+        content: "";
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        }
+        .radio input:checked + #red::after {
+        background: rgb(255, 0, 0);
+        }
+        .radio input:checked + #blue::after {
+        background: rgb(0, 166, 255);
+        }
+        .radio input:checked + #yellow::after {
+        background: rgb(255, 234, 0);
+        }
+
+        .flexbox {
+            display: flex;
+            background-color: purple;
+            width: 380px;
+            height: 500px;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <label class="radio">
+            <input type="radio" name="option" checked>
+            <span class="custom" id="red"></span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="option">
+            <span class="custom" id="blue"></span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="option">
+            <span class="custom" id="yellow"></span>
+        </label>
+    </div>
+    <script>
+        const radios = document.querySelectorAll('.radio input');
+let index = 0;
+let timer; // ❗ 記錄計時器 ID
+
+function autoSwitch() {
+    radios[index].checked = true;
+
+    if (index >= radios.length - 1) {
+        return; // ❌ 不再呼叫下一次
+    }
+
+    index++;
+    timer = setTimeout(autoSwitch, 1000);
+}
+
+autoSwitch();
+    </script>
+</body>
+</html>

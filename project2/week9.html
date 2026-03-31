@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set up a randomizer</title>
+</head>
+<style>
+    /* CSS reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+
+        padding: 40px;
+
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: flex-end;
+
+        gap: 40px;
+
+        transition: background-color 0.5s ease-in-out,
+            color 0.5s ease-in-out;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    button {
+        /* remove browser default button styling */
+        background-color: transparent;
+        border: none;
+
+        font-family: Helvetica, Arial, sans-serif;
+        color: rgb(155, 155, 155);
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <p class="text">Poem generator</p>
+    <button>Click me</button>
+    
+<script>
+    const bodyTag = document.querySelector("body")
+    const pTag = document.querySelector("p")
+    const buttonTag = document.querySelector("button")
+
+    const phrases = [
+        "Sometimes it's hard to get through", // 0
+        "All problems stack together", // 1
+        "It's seems like I'm not here yet", // 2
+        "Sometimes there's a random miracle" // 3
+    ]
+
+    const colors = [
+        "grey", // 0
+        "blue", // 1
+        "olive", // 2
+        "pink" // 3
+    ]
+
+    let counter = 0
+
+    
+    buttonTag.addEventListener("click", function () {
+        bodyTag.style.backgroundColor = colors[counter]
+        pTag.innerHTML = phrases[counter]
+
+        counter = counter+1
+
+    //     counter = Math.floor(Math.random() * phrases.length)
+
+    //     console.log(counter)
+    })
+</script>
+
+</body>
+</html>

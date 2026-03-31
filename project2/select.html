@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+    <style>
+.front-yellowbox {
+    position: absolute;
+    top: 250px;
+    right: 406px;
+    width: 200px;
+    height: 60px;
+    background: yellow;
+}
+.custom-select {
+    position: absolute;
+    top: 235px;
+    right: 198px;
+    width: 200px;
+    height: 220px;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.custom-select option{
+    height: 60px;
+    margin: 5px 0;
+}
+.custom-select::-webkit-scrollbar {
+  display: none;
+}
+.custom-select option:checked {
+    background: yellow;
+}
+#cars {
+    position: absolute;
+    top: 600px;
+    transform: rotate(-90deg);
+}
+#cars option {
+    height: 8px;
+    border-radius: 5px;
+    background: black;
+}
+#cars option:checked {
+    background: red;
+}
+    </style>
+</head>
+<body>
+    <span class="front-yellowbox"></span>
+    <select id="yellow" name="cars" size="3" class="custom-select">
+        <option value="one"></option>
+        <option value="two"></option>
+        <option value="three"></option>
+    </select>
+
+    <select id="cars" name="cars" size="3" class="custom-select"> 
+        <option value="one"></option>
+        <option value="two"></option>
+        <option value="three"></option>
+        <option value="four"></option>
+        <option value="five"></option>
+        <option value="six"></option>
+        <option value="seven"></option>
+        <option value="eight"></option>
+        <option value="nine"></option>
+    </select>
+
+    <script>
+        let select = document.getElementById("cars"); 
+        let ex = 0;
+
+        function autoSelect() {
+            select.selectedIndex = ex; // 選中對應的 option
+
+            ex++;
+            if (ex >= select.options.length) {
+                ex = 0; // 循環回到第一個
+            }
+
+    setTimeout(autoSelect, 1000); // 每秒切換一次
+}
+
+// 啟動
+autoSelect();
+    </script>
+
+</body>
+</html>
